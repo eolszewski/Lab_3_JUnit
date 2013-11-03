@@ -1,0 +1,149 @@
+Script started on Sun Nov  3 16:22:05 2013
+[?1034hbash-3.2$ javac -cp junit-4.11.jar:. RationalTest.java Rational.java
+RationalTest.java:1: error: package junit.framework does not exist
+import junit.framework.TestCase;
+                      ^
+RationalTest.java:3: error: package org.junit does not exist
+import org.junit.Test;
+                ^
+RationalTest.java:5: error: cannot find symbol
+public class RationalTest extends TestCase {
+                                  ^
+  symbol: class TestCase
+RationalTest.java:48: error: cannot find symbol
+    @Test(expected = ArithmeticException.class) 
+     ^
+  symbol:   class Test
+  location: class RationalTest
+RationalTest.java:94: error: cannot find symbol
+    @Test(expected = IllegalArgumentToSquareRootException.class) 
+     ^
+  symbol:   class Test
+  location: class RationalTest
+RationalTest.java:104: error: cannot find symbol
+    @Test(expected = IllegalArgumentToSquareRootException.class) 
+     ^
+  symbol:   class Test
+  location: class RationalTest
+RationalTest.java:20: error: cannot find symbol
+        assertEquals(new Rational(1,3), new Rational(1,3));
+        ^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:21: error: cannot find symbol
+        assertEquals(new Rational(1,3), new Rational(2,6));
+        ^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:22: error: cannot find symbol
+        assertEquals(new Rational(3,3), new Rational(1,1));
+        ^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:27: error: cannot find symbol
+        assertFalse(new Rational(2,3).equals(
+        ^
+  symbol:   method assertFalse(boolean)
+  location: class RationalTest
+RationalTest.java:32: error: cannot find symbol
+    	assertEquals(new Rational(2,3).numerator(), 2);
+    	^
+  symbol:   method assertEquals(int,int)
+  location: class RationalTest
+RationalTest.java:33: error: cannot find symbol
+    	assertEquals(new Rational(2,3).denominator(), 3);
+    	^
+  symbol:   method assertEquals(int,int)
+  location: class RationalTest
+RationalTest.java:44: error: cannot find symbol
+        assertTrue( sRoot.isLessThan( HALF.plus( Rational.getTolerance() ) ) 
+        ^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:52: error: cannot find symbol
+        	assertTrue(true);
+        	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:54: error: cannot find symbol
+            assertFalse(true);
+            ^
+  symbol:   method assertFalse(boolean)
+  location: class RationalTest
+RationalTest.java:62: error: cannot find symbol
+    	assertTrue(u.numerator() > 0);
+    	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:70: error: cannot find symbol
+    	assertTrue(v.equals(t));
+    	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:76: error: cannot find symbol
+    	assertTrue(t.divides(s).equals(new Rational(3, 0)));
+    	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:84: error: cannot find symbol
+    	assertTrue(v.equals(t));
+    	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:91: error: cannot find symbol
+    	assertTrue(v.equals(new Rational(-50, 1)));
+    	^
+  symbol:   method assertTrue(boolean)
+  location: class RationalTest
+RationalTest.java:110: error: cannot find symbol
+			assertFalse(true);
+			^
+  symbol:   method assertFalse(boolean)
+  location: class RationalTest
+RationalTest.java:117: error: cannot find symbol
+		assertEquals(abs, new Rational( 0, 1 ));
+		^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:123: error: cannot find symbol
+		assertEquals(abs, new Rational( 1, 1 ));
+		^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:129: error: cannot find symbol
+		assertEquals(abs, new Rational( 1, 1 ));
+		^
+  symbol:   method assertEquals(Rational,Rational)
+  location: class RationalTest
+RationalTest.java:134: error: cannot find symbol
+    	assertEquals(s.toString(), "13/-11");
+    	^
+  symbol:   method assertEquals(String,String)
+  location: class RationalTest
+RationalTest.java:138: error: cannot find symbol
+    	assertFalse(new Rational( 2, 1 ).equals(null));
+    	^
+  symbol:   method assertFalse(boolean)
+  location: class RationalTest
+RationalTest.java:143: error: cannot find symbol
+    	assertFalse(new Rational( 2, 1 ).equals(o));
+    	^
+  symbol:   method assertFalse(boolean)
+  location: class RationalTest
+RationalTest.java:148: error: cannot find symbol
+    	assertEquals(s.numerator(), -13);
+    	^
+  symbol:   method assertEquals(int,int)
+  location: class RationalTest
+RationalTest.java:149: error: cannot find symbol
+    	assertEquals(s.denominator(), -29);
+    	^
+  symbol:   method assertEquals(int,int)
+  location: class RationalTest
+RationalTest.java:156: error: package junit.textui does not exist
+        junit.textui.TestRunner.main(testCaseName);
+                    ^
+30 errors
+bash-3.2$ cd .[K[K[K[Kexit
+
+Script done on Sun Nov  3 16:22:46 2013

@@ -1,0 +1,5 @@
+Script started on Sun Nov  3 16:24:05 2013
+[?1034hbash-3.2$ javac -cp junit-4.11.jar:. RationalTest.java Rational.java[1@s[1@r[1@c[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CsRational.javarRational.javacRational.java/Rational.java
+bash-3.2$ exit
+
+Script done on Sun Nov  3 16:24:43 2013
